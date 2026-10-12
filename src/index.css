@@ -54,7 +54,8 @@
   --status-blue-border: #bfdbfe;
 
   /* Typography Stack */
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", system-ui, sans-serif;
+  --font-heading: 'Satoshi', -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  --font-sans: 'Switzer', -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
   --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   /* Continuous Corner Radii */
@@ -78,6 +79,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-title,
+.section-title,
+.about-card-title,
+.feature-item-title,
+.form-heading,
+.brand-name {
+  font-family: var(--font-heading);
 }
 
 html {

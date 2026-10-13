@@ -22,6 +22,9 @@ export default function Navbar() {
         </nav>
 
         <div className="nav-actions">
+          <a className="btn btn-primary nav-cta" href="#contact">
+            Request demo
+          </a>
           <button
             type="button"
             className="mobile-toggle"

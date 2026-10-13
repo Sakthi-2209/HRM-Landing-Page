@@ -5,7 +5,6 @@ import About from './components/About';
 import Features from './components/Features';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { ArrowRight } from 'lucide-react';
 
 function App() {
   useEffect(() => {
@@ -39,28 +38,8 @@ function App() {
   return (
     <div className="peoplesoft-app">
       <Navbar />
-      <div className="subnav">
-        <div className="container subnav-inner">
-          <span className="subnav-title">PeopleSoft</span>
-          <a className="btn btn-primary subnav-cta" href="#contact">Request demo</a>
-        </div>
-      </div>
       <main>
         <Hero />
-        <section className="showcase-strip" aria-label="PeopleSoft highlights">
-          <article className="showcase-card tile-parchment">
-            <p className="tile-eyebrow">Your people, in focus</p>
-            <h2>Everything important, right where you need it.</h2>
-            <p>One calm workspace for employee records, attendance, leave and the next great hire.</p>
-            <a className="btn btn-secondary" href="#features">Explore features <ArrowRight size={16} /></a>
-          </article>
-          <article className="showcase-card tile-dark">
-            <p className="tile-eyebrow">Built for momentum</p>
-            <h2>Less admin. More time for people.</h2>
-            <p>Simple workflows make everyday HR work feel lighter, faster and more human.</p>
-            <a className="btn btn-primary" href="#contact">See how it works <ArrowRight size={16} /></a>
-          </article>
-        </section>
         <About />
         <Features />
         <Contact />

@@ -1,36 +1,27 @@
-/* ==========================================================================
-   PeopleSoft HRM - Simple Colorful Ambient Theme
-   Vibrant, fresh, modern aesthetic with soft multi-color gradient canvas
-   ========================================================================== */
-
 :root {
-  /* Colorful Ambient Canvas & Surfaces */
+
   --bg-page: #f8fafc;
   --bg-surface: #ffffff;
   --bg-subtle: #f8fafc;
   --bg-pill: rgba(99, 102, 241, 0.08);
   --bg-pill-hover: rgba(99, 102, 241, 0.14);
 
-  /* Borders & Dividers */
   --border-default: #e2e8f0;
   --border-subtle: rgba(226, 232, 240, 0.85);
   --border-light: #f1f5f9;
   --border-focus: #6366f1;
 
-  /* Typography Colors */
-  --text-primary: #0f172a;       /* Slate 900 */
-  --text-secondary: #334155;     /* Slate 700 */
-  --text-muted: #64748b;         /* Slate 500 */
-  --text-eyebrow: #4f46e5;       /* Indigo */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-eyebrow: #4f46e5;
 
-  /* Vibrant Accent Palette */
-  --primary-blue: #4f46e5;       /* Vibrant Indigo */
+  --primary-blue: #4f46e5;
   --primary-blue-hover: #4338ca;
   --primary-blue-active: #3730a3;
   --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
   --primary-gradient-hover: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
 
-  /* Multi-color Accents */
   --color-blue: #2563eb;
   --color-blue-bg: #eff6ff;
   --color-emerald: #059669;
@@ -42,7 +33,6 @@
   --color-rose: #e11d48;
   --color-rose-bg: #fff1f2;
 
-  /* Status Colors */
   --status-green: #059669;
   --status-green-bg: #ecfdf5;
   --status-green-border: #a7f3d0;
@@ -53,12 +43,10 @@
   --status-blue-bg: #eff6ff;
   --status-blue-border: #bfdbfe;
 
-  /* Typography Stack */
   --font-heading: 'Satoshi', -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
   --font-sans: 'Switzer', -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
   --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Continuous Corner Radii */
   --radius-xs: 6px;
   --radius-sm: 10px;
   --radius-md: 16px;
@@ -66,7 +54,6 @@
   --radius-xl: 28px;
   --radius-pill: 980px;
 
-  /* Soft Ambient Shadows */
   --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
   --shadow-card: 0 8px 28px -4px rgba(99, 102, 241, 0.07), 0 2px 8px -1px rgba(15, 23, 42, 0.04);
   --shadow-card-hover: 0 20px 40px -6px rgba(99, 102, 241, 0.14), 0 6px 16px -2px rgba(15, 23, 42, 0.06);
@@ -119,7 +106,6 @@ body {
   background-color: #f8fafc;
 }
 
-/* Simple, Cheerful, Multi-Color Gradient Mesh Background Canvas */
 body::before {
   content: '';
   position: fixed;
@@ -127,13 +113,13 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 10% 12%, rgba(147, 197, 253, 0.55) 0%, transparent 45%),   /* Sky Blue */
-    radial-gradient(circle at 90% 14%, rgba(244, 114, 182, 0.45) 0%, transparent 42%),  /* Soft Rose Pink */
-    radial-gradient(circle at 50% 32%, rgba(167, 139, 250, 0.45) 0%, transparent 45%),  /* Lavender Violet */
-    radial-gradient(circle at 14% 60%, rgba(110, 231, 183, 0.45) 0%, transparent 45%),  /* Mint Emerald */
-    radial-gradient(circle at 88% 68%, rgba(251, 191, 36, 0.42) 0%, transparent 40%),   /* Warm Sunny Amber */
-    radial-gradient(circle at 52% 88%, rgba(129, 140, 248, 0.45) 0%, transparent 45%),  /* Indigo Accent */
-    radial-gradient(circle at 82% 42%, rgba(253, 164, 175, 0.42) 0%, transparent 38%),  /* Coral Peach */
+    radial-gradient(circle at 10% 12%, rgba(147, 197, 253, 0.55) 0%, transparent 45%),
+    radial-gradient(circle at 90% 14%, rgba(244, 114, 182, 0.45) 0%, transparent 42%),
+    radial-gradient(circle at 50% 32%, rgba(167, 139, 250, 0.45) 0%, transparent 45%),
+    radial-gradient(circle at 14% 60%, rgba(110, 231, 183, 0.45) 0%, transparent 45%),
+    radial-gradient(circle at 88% 68%, rgba(251, 191, 36, 0.42) 0%, transparent 40%),
+    radial-gradient(circle at 52% 88%, rgba(129, 140, 248, 0.45) 0%, transparent 45%),
+    radial-gradient(circle at 82% 42%, rgba(253, 164, 175, 0.42) 0%, transparent 38%),
     #f8fafc;
   background-size: 100% 100%;
 }
@@ -157,7 +143,6 @@ body::before {
   border-top: 1px solid rgba(226, 232, 240, 0.65);
 }
 
-/* Typography Helpers */
 .section-eyebrow {
   display: inline-block;
   font-size: 0.82rem;
@@ -189,7 +174,6 @@ body::before {
   max-width: 760px;
 }
 
-/* Scroll Reveal Utilities */
 .reveal {
   opacity: 0;
   transform: translateY(38px);
@@ -215,7 +199,6 @@ body::before {
   transition-delay: 0.36s;
 }
 
-/* Buttons - Vibrant & Tactile */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -278,7 +261,6 @@ body::before {
   width: 100%;
 }
 
-/* Brand Logo */
 .brand-mark {
   display: inline-flex;
   align-items: center;
@@ -302,17 +284,14 @@ body::before {
   color: var(--text-primary);
 }
 
-/* Header & Navbar - Translucent Frosted Glass */
 .header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.75);
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-default);
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.06);
   width: 100%;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .nav-container {
@@ -361,7 +340,7 @@ body::before {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffffff;
   border: 1px solid var(--border-default);
   color: var(--text-primary);
   cursor: pointer;
@@ -372,7 +351,7 @@ body::before {
 }
 
 .mobile-toggle:hover {
-  background: #ffffff;
+  background: var(--bg-subtle);
 }
 
 .toggle-icon {
@@ -382,9 +361,7 @@ body::before {
 
 .mobile-drawer {
   display: none;
-  background-color: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background-color: #ffffff;
   border-bottom: 1px solid var(--border-default);
   box-shadow: var(--shadow-dropdown);
   padding: 1rem 1.5rem 1.5rem;
@@ -434,7 +411,6 @@ body::before {
   min-height: 44px;
 }
 
-/* Hero Section */
 .hero-section {
   padding: 5.5rem 0 4.5rem;
   position: relative;
@@ -451,7 +427,7 @@ body::before {
   width: 780px;
   max-width: 90vw;
   height: 420px;
-  /* background: radial-gradient(ellipse at center, rgba(167, 139, 250, 0.22) 0%, rgba(147, 197, 253, 0.22) 40%, rgba(244, 114, 182, 0.18) 70%, transparent 80%); */
+
   filter: blur(60px);
   pointer-events: none;
   z-index: 0;
@@ -496,7 +472,6 @@ body::before {
   margin-bottom: 0;
 }
 
-/* About Section */
 .about-section {
   background: transparent;
 }
@@ -640,7 +615,6 @@ body::before {
   margin-top: 0.25rem;
 }
 
-/* Features Section - Bento Cards */
 .features-section {
   background: transparent;
 }
@@ -836,7 +810,6 @@ body::before {
   line-height: 1;
 }
 
-/* Interactive Preview Window */
 .ui-window {
   background: #ffffff;
   border: 1px solid var(--border-default);
@@ -1033,7 +1006,6 @@ body::before {
   border: 1px solid var(--status-blue-border);
 }
 
-/* Contact Section */
 .contact-section {
   background: transparent;
 }
@@ -1183,7 +1155,6 @@ body::before {
   margin: 0 auto 2rem;
 }
 
-/* Footer - Frosted Glass & Ambient Tone */
 .footer {
   border-top: 1px solid rgba(226, 232, 240, 0.8);
   padding: 4.5rem 0;
@@ -1238,7 +1209,6 @@ body::before {
   color: var(--primary-blue);
 }
 
-/* Responsive Media Queries */
 @media (max-width: 1080px) {
   .feature-item {
     gap: 2.5rem;

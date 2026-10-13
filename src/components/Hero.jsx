@@ -8,8 +8,7 @@ export default function Hero() {
         <div className="hero-content reveal">
           <p className="section-eyebrow">A smarter way to manage people</p>
           <h1 className="hero-title">
-            <span className="hero-title-line">Manage your employees, attendance,</span>
-            <span className="hero-title-line">hiring in one place</span>
+            Manage your employees, attendance, hiring in one place
           </h1>
           <p className="hero-lead">
             PeopleSoft helps you keep track of your staff, check daily attendance, approve leaves, hire new team members easily.

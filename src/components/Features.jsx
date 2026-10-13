@@ -5,9 +5,9 @@ const FEATURES = [
     step: '01',
     name: 'Employee Records',
     tagline: 'See all your team members and their details in one place.',
-    description: 'Keep everyone\'s phone number, job title, department, and documents in one spot. Search for any teammate instantly without asking around.',
+    description: 'Keep everyone\'s phone number, job title, department, documents in one spot. Search for any teammate instantly without asking around.',
     highlights: [
-      'Full profiles with contact details, photo, and job title',
+      'Full profiles with contact details, photo, job title',
       'Department list showing who reports to whom',
       'Staff can update their own personal info anytime',
       'Quick search by name, role, or department'
@@ -16,11 +16,11 @@ const FEATURES = [
       title: 'Employee Records · 50 Active Staff',
       headers: ['Employee', 'Department', 'Status'],
       rows: [
-        { name: 'Sakthi Vel', sub: 'Product Designer', dept: 'Design', status: 'Active', statusClass: 'pill-green', avatar: 'SV' },
-        { name: 'Arun Kumar', sub: 'Software Engineer', dept: 'Engineering', status: 'Active', statusClass: 'pill-green', avatar: 'AK' },
-        { name: 'Yogitha Sri', sub: 'HR Specialist', dept: 'HR Team', status: 'Active', statusClass: 'pill-green', avatar: 'YS' },
-        { name: 'Vijay Anand', sub: 'Sales Executive', dept: 'Sales', status: 'Active', statusClass: 'pill-green', avatar: 'VA' },
-        { name: 'Meena Sundar', sub: 'Operations Lead', dept: 'Operations', status: 'Active', statusClass: 'pill-green', avatar: 'MS' }
+        { name: 'Sakthi Vel', sub: 'Product Designer', dept: 'Design', status: 'Active', statusClass: 'status-positive', avatar: 'SV' },
+        { name: 'Arun Kumar', sub: 'Software Engineer', dept: 'Engineering', status: 'Active', statusClass: 'status-positive', avatar: 'AK' },
+        { name: 'Yogitha Sri', sub: 'HR Specialist', dept: 'HR Team', status: 'Active', statusClass: 'status-positive', avatar: 'YS' },
+        { name: 'Vijay Anand', sub: 'Sales Executive', dept: 'Sales', status: 'Active', statusClass: 'status-positive', avatar: 'VA' },
+        { name: 'Meena Sundar', sub: 'Operations Lead', dept: 'Operations', status: 'Active', statusClass: 'status-positive', avatar: 'MS' }
       ]
     }
   },
@@ -39,11 +39,11 @@ const FEATURES = [
       title: 'Today’s Attendance Overview',
       headers: ['Employee', 'Check-in Time', 'Status'],
       rows: [
-        { name: 'Hari Prasad', sub: 'In Office', time: '09:00 AM', status: 'Present', statusClass: 'pill-green', avatar: 'HP' },
-        { name: 'Swetha Raman', sub: 'Working Remote', time: '09:05 AM', status: 'Present', statusClass: 'pill-green', avatar: 'SR' },
-        { name: 'Vishwa Nathan', sub: 'Sick Leave', time: '—', status: 'On Leave', statusClass: 'pill-amber', avatar: 'VN' },
-        { name: 'Siva Prakash', sub: 'In Office', time: '08:50 AM', status: 'Present', statusClass: 'pill-green', avatar: 'SP' },
-        { name: 'Sunil Mohan', sub: 'In Office', time: '09:10 AM', status: 'Present', statusClass: 'pill-green', avatar: 'SM' }
+        { name: 'Hari Prasad', sub: 'In Office', time: '09:00 AM', status: 'Present', statusClass: 'status-positive', avatar: 'HP' },
+        { name: 'Swetha Raman', sub: 'Working Remote', time: '09:05 AM', status: 'Present', statusClass: 'status-positive', avatar: 'SR' },
+        { name: 'Vishwa Nathan', sub: 'Sick Leave', time: 'Not checked in', status: 'On Leave', statusClass: 'status-attention', avatar: 'VN' },
+        { name: 'Siva Prakash', sub: 'In Office', time: '08:50 AM', status: 'Present', statusClass: 'status-positive', avatar: 'SP' },
+        { name: 'Sunil Mohan', sub: 'In Office', time: '09:10 AM', status: 'Present', statusClass: 'status-positive', avatar: 'SM' }
       ]
     }
   },
@@ -62,10 +62,10 @@ const FEATURES = [
       title: 'Open Job Positions',
       headers: ['Job Title', 'Applicants', 'Current Stage'],
       rows: [
-        { name: 'Software Engineer', sub: 'Engineering', count: '24 Applicants', status: 'Final Interview', statusClass: 'pill-blue', avatar: 'SE' },
-        { name: 'Product Designer', sub: 'Design', count: '18 Applicants', status: 'Reviewing Tasks', statusClass: 'pill-blue', avatar: 'PD' },
-        { name: 'Customer Support', sub: 'Support', count: '31 Applicants', status: 'Screening', statusClass: 'pill-blue', avatar: 'CS' },
-        { name: 'Accountant', sub: 'Finance', count: '12 Applicants', status: 'Offer Sent', statusClass: 'pill-green', avatar: 'AC' }
+        { name: 'Software Engineer', sub: 'Engineering', count: '24 Applicants', status: 'Final Interview', statusClass: 'status-progress', avatar: 'SE' },
+        { name: 'Product Designer', sub: 'Design', count: '18 Applicants', status: 'Reviewing Tasks', statusClass: 'status-progress', avatar: 'PD' },
+        { name: 'Customer Support', sub: 'Support', count: '31 Applicants', status: 'Screening', statusClass: 'status-progress', avatar: 'CS' },
+        { name: 'Accountant', sub: 'Finance', count: '12 Applicants', status: 'Offer Sent', statusClass: 'status-positive', avatar: 'AC' }
       ]
     }
   }
@@ -81,7 +81,7 @@ export default function Features() {
             Simple tools to handle your daily HR work
           </h2>
           <p className="section-description">
-            Everything you need to manage employees, attendance, and hiring in one place.
+            Everything you need to manage employees, attendance, hiring in one place.
           </p>
         </div>
 

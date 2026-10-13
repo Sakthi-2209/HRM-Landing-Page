@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="footer-brand-col">
             <Logo />
             <p className="footer-summary">
-              PeopleSoft helps you manage employee profiles, daily attendance, and hiring in one easy place.
+              PeopleSoft helps you manage employee profiles, daily attendance, hiring in one easy place.
             </p>
           </div>
 
@@ -29,6 +29,14 @@ export default function Footer() {
               <li><a href="#features" className="footer-link">Employee Directory</a></li>
               <li><a href="#features" className="footer-link">Attendance & Leave</a></li>
               <li><a href="#features" className="footer-link">Hiring & Onboarding</a></li>
+            </ul>
+          </div>
+          <div className="footer-nav-col">
+            <span className="footer-nav-title">Contact</span>
+            <ul className="footer-links">
+              <li><a href="mailto:hello@peoplesoft.app" className="footer-link">Email PeopleSoft</a></li>
+              <li><a href="tel:+18005550199" className="footer-link">Call +1 (800) 555-0199</a></li>
+              <li><a href="https://www.linkedin.com/company/peoplesoft/" className="footer-link" target="_blank" rel="noreferrer">LinkedIn</a></li>
             </ul>
           </div>
         </div>

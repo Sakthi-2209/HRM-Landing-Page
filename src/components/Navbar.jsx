@@ -16,17 +16,12 @@ export default function Navbar() {
         </a>
 
         <nav className="nav-menu" aria-label="Main Navigation">
-          <a href="#home" className="nav-link">Home</a>
-          <a href="#about" className="nav-link">About</a>
+          <a href="#about" className="nav-link">Why PeopleSoft</a>
           <a href="#features" className="nav-link">Features</a>
           <a href="#contact" className="nav-link">Contact</a>
         </nav>
 
         <div className="nav-actions">
-          <a href="#contact" className="btn btn-primary">
-            Request Demo
-          </a>
-
           <button
             type="button"
             className="mobile-toggle"
@@ -46,8 +41,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="mobile-drawer">
           <nav className="mobile-menu">
-            <a href="#home" className="mobile-link" onClick={closeMenu}>Home</a>
-            <a href="#about" className="mobile-link" onClick={closeMenu}>About</a>
+            <a href="#about" className="mobile-link" onClick={closeMenu}>Why PeopleSoft</a>
             <a href="#features" className="mobile-link" onClick={closeMenu}>Features</a>
             <a href="#contact" className="mobile-link" onClick={closeMenu}>Contact</a>
             <a href="#contact" className="btn btn-primary mobile-btn" onClick={closeMenu}>

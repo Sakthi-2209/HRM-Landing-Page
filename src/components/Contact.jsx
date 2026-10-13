@@ -47,6 +47,11 @@ export default function Contact() {
             <p className="section-description">
               We are here to help. Reach out to our team to see how PeopleSoft works or ask any questions about setting it up for your company.
             </p>
+            <div className="contact-direct">
+              <a href="mailto:hello@peoplesoft.app">hello@peoplesoft.app</a>
+              <a href="tel:+18005550199">+1 (800) 555-0199</a>
+              <a href="https://www.linkedin.com/company/peoplesoft/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
           </div>
 
           <div className="contact-form-panel reveal reveal-delay-1">

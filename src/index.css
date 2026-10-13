@@ -264,17 +264,7 @@ body::before {
 .brand-mark {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
   text-decoration: none;
-}
-
-.brand-symbol {
-  flex-shrink: 0;
-  transition: transform 0.2s ease;
-}
-
-.brand-mark:hover .brand-symbol {
-  transform: scale(1.06);
 }
 
 .brand-name {

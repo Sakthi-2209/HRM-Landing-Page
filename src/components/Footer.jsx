@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-top">
           <div className="footer-brand-col">
-            <Logo size={24} />
+            <Logo />
             <p className="footer-summary">
               PeopleSoft helps you manage employee profiles, daily attendance, and hiring in one easy place.
             </p>

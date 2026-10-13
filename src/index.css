@@ -54,6 +54,7 @@ a { color: inherit; }
 .tile-dark .tile-eyebrow { color: var(--blue-dark); }
 .hero-title, .section-title, .about-card-title, .feature-item-title, .form-heading { font-family: var(--font-display); font-weight: 600; letter-spacing: -.6px; line-height: 1.07; text-wrap: balance; }
 .hero-title { max-width: 900px; margin: 0 auto 18px; font-size: clamp(40px, 5.2vw, 68px); }
+.hero-title-line { display: block; }
 .hero-lead, .section-description { max-width: 700px; margin: 0 auto; color: var(--muted); font-size: 21px; line-height: 1.47; letter-spacing: -.25px; }
 .hero-actions { display: flex; justify-content: center; gap: 12px; margin-top: 30px; flex-wrap: wrap; }
 

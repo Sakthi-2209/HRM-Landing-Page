@@ -1186,7 +1186,7 @@ body::before {
 /* Footer - Frosted Glass & Ambient Tone */
 .footer {
   border-top: 1px solid rgba(226, 232, 240, 0.8);
-  padding: 5rem 0 3rem;
+  padding: 4.5rem 0;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -1196,7 +1196,7 @@ body::before {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr;
   gap: 4rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 0;
 }
 
 .footer-brand-col {
@@ -1235,33 +1235,6 @@ body::before {
 }
 
 .footer-link:hover {
-  color: var(--primary-blue);
-}
-
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border-default);
-  font-size: 0.82rem;
-  color: var(--text-muted);
-}
-
-.footer-back-to-top {
-  background: none;
-  border: none;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  transition: color 0.15s ease;
-}
-
-.footer-back-to-top:hover {
   color: var(--primary-blue);
 }
 
@@ -1473,11 +1446,5 @@ body::before {
   .footer-top {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
   }
 }

@@ -1,15 +1,7 @@
 import React from 'react';
-import { ArrowUp } from 'lucide-react';
 import Logo from './Logo';
 
-const currentYear = new Date().getFullYear();
-
 export default function Footer() {
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <footer className="footer reveal">
       <div className="container footer-container">
@@ -39,19 +31,6 @@ export default function Footer() {
               <li><a href="#features" className="footer-link">Hiring & Onboarding</a></li>
             </ul>
           </div>
-        </div>
-
-        <div className="footer-bottom">
-          <p className="footer-copyright">
-            © {currentYear} PeopleSoft Inc. All rights reserved.
-          </p>
-          <button
-            type="button"
-            onClick={scrollToTop}
-            className="footer-back-to-top"
-          >
-            Back to top <ArrowUp size={14} style={{ display: 'inline', verticalAlign: 'middle', marginLeft: '4px' }} />
-          </button>
         </div>
       </div>
     </footer>

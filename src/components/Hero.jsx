@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="home" className="hero-section">
       <div className="container">
         <div className="hero-content reveal">
-          <p className="section-eyebrow">HR platform for modern teams</p>
+          <p className="section-eyebrow">A smarter way to manage people</p>
           <h1 className="hero-title">
             Manage your employees, attendance, and hiring in one place
           </h1>

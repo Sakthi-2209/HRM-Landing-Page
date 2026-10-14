@@ -295,9 +295,18 @@ a {
 }
 
 .about-section {
-  background: var(--dark-2);
-  color: #fff;
+  background: #ffffff;
+  padding: 48px 0;
   text-align: center;
+}
+.about-section .container {
+  background: #292929;
+  color: #fff;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 48px;
+  box-sizing: border-box;
 }
 .about-section .section-description {
   color: #c7c7cc;
@@ -308,16 +317,17 @@ a {
   margin: 0 auto 52px;
 }
 .about-grid {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .about-card {
   display: grid;
-  grid-template-columns: 64px 1fr 1fr;
-  gap: 28px;
+  grid-template-columns: 64px 1fr 1.2fr;
+  gap: 32px;
   align-items: start;
   border-top: 1px solid #48484b;
-  padding: 32px 0;
+  padding: 36px 0;
   text-align: left;
 }
 .about-card-number,
@@ -757,6 +767,13 @@ a {
   .about-grid {
     grid-template-columns: 1fr;
   }
+  .about-section {
+    padding: 36px 0;
+  }
+  .about-section .container {
+    width: 92%;
+    padding: 60px 28px;
+  }
   .showcase-card {
     min-height: 470px;
     padding: 60px 28px;
@@ -822,6 +839,13 @@ a {
   }
   .section {
     padding: 56px 0;
+  }
+  .about-section {
+    padding: 24px 0;
+  }
+  .about-section .container {
+    width: 95%;
+    padding: 48px 20px;
   }
   .feature-item {
     padding: 48px 20px;

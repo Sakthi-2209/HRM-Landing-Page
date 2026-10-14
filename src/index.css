@@ -362,14 +362,14 @@ a {
   margin-bottom: 12px;
 }
 .feature-item-tagline {
-  color: var(--blue-dark);
+  color: #ffffff;
   font-size: 21px;
   line-height: 1.25;
   margin-bottom: 16px;
 }
 .feature-item:nth-child(2) .feature-item-tagline,
 .feature-item:nth-child(3) .feature-item-tagline {
-  color: var(--blue-dark);
+  color: #ffffff;
 }
 .feature-item-desc {
   color: #c7c7cc;

@@ -10,9 +10,9 @@
   --dark-3: #252527;
   --hairline: #e0e0e0;
   --font-display:
-    "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  "SF Pro Display", system-ui,  switzer  ;
   --font-text:
-    "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  "SF Pro Text", system-ui,  switzer;
   --font-mono: "SFMono-Regular", Consolas, monospace;
 }
 

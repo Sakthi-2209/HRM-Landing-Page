@@ -10,7 +10,7 @@ export default function About() {
             Stop using messy spreadsheets to run your company
           </h2>
           <p className="section-description">
-            Many businesses use too many separate tools: Excel for attendance, chat messages for leaves, scattered files for employee records.
+            Many businesses use too many separate tools. Excel for attendance, chat messages for leaves, scattered files for employee records.
           </p>
           <p className="section-description">
             PeopleSoft brings all of this together into one easy app so you can manage your team with zero stress.
